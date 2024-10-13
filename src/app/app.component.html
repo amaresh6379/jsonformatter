@@ -1,0 +1,29 @@
+<div fxLayout="row wrap"  >
+  <div fxFlex="50">
+    <!-- <div fxLayout="row">
+      <button>fullscreen</button>
+    </div> -->
+    <textarea name="" id="" class="textarea" placeholder="Enter json here" [(ngModel)]="inputJson" (input)="formatJson()"></textarea>
+  </div>
+  <div fxFlex="50">
+    <textarea name="" id="" class="textarea" placeholder="formatted json appers here" [value]="outputJson"> </textarea>
+  </div>
+  @if(splitCondition){
+    <div fxFlex="50">
+      <textarea name="" id="" class="textarea" placeholder="splitted json" [value]="splitedJson2"></textarea>
+    </div>
+  }
+
+
+</div>
+@if(errorMessage){
+  <p >{{ errorMessage }}</p>
+
+}
+@if(jsonLength>0){
+  <p>Length : {{jsonLength}}</p>
+}
+@if(jsonLength > 30000){
+  <button (click)="splitJson()">Split</button>
+}
+
