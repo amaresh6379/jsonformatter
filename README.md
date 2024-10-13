@@ -1,27 +1,40 @@
-# Jsonformatter
+# JSON Formatter Tool
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 18.2.2.
+**JSON Formatter** is a lightweight and easy-to-use tool that formats JSON data for readability. It also provides additional functionalities, such as counting the number of characters in the JSON and splitting large JSON files into smaller parts for easy insertion into Excel cells. Excel has a character limit per cell, and this tool helps manage large JSON data for that purpose.
 
-## Development server
+## Features
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+- **Pretty Print JSON:** Formats the input JSON into a human-readable structure with proper indentation.
+- **Character Count:** Displays the total number of characters in the JSON input.
+- **JSON Splitter:** Splits large JSON data into smaller sections for easy pasting into Excel cells, respecting Excel's character limit per cell (32,767 characters).
 
-## Code scaffolding
+## Installation
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+1. Clone the repository to your local machine:
 
-## Build
+    ```bash
+    git clone https://github.com/amaresh6379/jsonformatter.git
+    ```
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+2. Navigate to the project directory:
 
-## Running unit tests
+    ```bash
+    cd jsonformatter
+    ```
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+3. Install the required dependencies:
 
-## Running end-to-end tests
+    ```bash
+    npm install
+    ```
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+## Usage
 
-## Further help
+### 1. Formatting JSON
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
+The tool formats any valid JSON input into a readable format.
+
+#### Example Input
+
+```json
+{"name":"John","age":30,"city":"New York"}
